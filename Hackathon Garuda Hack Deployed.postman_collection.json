@@ -1,0 +1,685 @@
+{
+	"info": {
+		"_postman_id": "c9c03cb7-28a1-4d5c-a81b-22c1dd3af78a",
+		"name": "Hackathon Garuda Hack Deployed",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Non JWT",
+			"item": [
+				{
+					"name": "AUTH",
+					"item": [
+						{
+							"name": "loginSecure",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "adminstufend",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "stufendadmin",
+											"type": "text"
+										},
+										{
+											"key": "identifier",
+											"value": "1",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{localhost:8080}}/api/loginSecure",
+									"host": [
+										"{{localhost:8080}}"
+									],
+									"path": [
+										"api",
+										"loginSecure"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "loginSecure",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "username",
+													"value": "adminstufend",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "stufendadmin",
+													"type": "text"
+												},
+												{
+													"key": "identifier",
+													"value": "1",
+													"type": "text",
+													"disabled": true
+												}
+											]
+										},
+										"url": {
+											"raw": "{{localhost:8080}}/api/loginSecure",
+											"host": [
+												"{{localhost:8080}}"
+											],
+											"path": [
+												"api",
+												"loginSecure"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 20 Nov 2021 14:29:48 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "568"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"meta\": {\n        \"code\": \"34017\",\n        \"message\": \"Login Success\",\n        \"request_id\": \"471dcf2a-d66b-4d14-a611-216e72f1d378\"\n    },\n    \"pagination\": {\n        \"total_records\": 0,\n        \"total_page\": 0,\n        \"limit_page\": 0,\n        \"current_page\": 0\n    },\n    \"data\": {\n        \"user\": {\n            \"id\": 2,\n            \"id_user\": 1,\n            \"username\": \"adminstufend\",\n            \"email\": \"admin@stufend.com\"\n        },\n        \"token\": \"37eyUNoSwKKE++Q4yIU2fEOEx91ftrrKst+vujZ/5XhSGeMkq9lIpA==\",\n        \"jwt_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2Mzc0MTg1ODgsImlhdCI6MTYzNzQxODU4OCwiVXNlcklEIjoiMSIsIkVtYWlsIjoiYWRtaW5zdHVmZW5kIn0.1FNA6r9chXjMivW8hIkmGnOx57W4zUTOx2Hdd2RPYVY\",\n        \"server_time\": \"2021-11-20 21:29:48\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Profil",
+					"item": [
+						{
+							"name": "GetUserDataWithAccountState",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{localhost:8080}}/api/GetUserDataWithAccountState?id_user=1&token=b1a26427-98da-41ea-9b29-f4f14d53baea",
+									"host": [
+										"{{localhost:8080}}"
+									],
+									"path": [
+										"api",
+										"GetUserDataWithAccountState"
+									],
+									"query": [
+										{
+											"key": "id_user",
+											"value": "1"
+										},
+										{
+											"key": "token",
+											"value": "b1a26427-98da-41ea-9b29-f4f14d53baea"
+										},
+										{
+											"key": "identifier",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "GetUserDataWithAccountState",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{localhost:8080}}/api/GetUserDataWithAccountState?id_user=1&token=b1a26427-98da-41ea-9b29-f4f14d53baea",
+											"host": [
+												"{{localhost:8080}}"
+											],
+											"path": [
+												"api",
+												"GetUserDataWithAccountState"
+											],
+											"query": [
+												{
+													"key": "id_user",
+													"value": "1"
+												},
+												{
+													"key": "token",
+													"value": "b1a26427-98da-41ea-9b29-f4f14d53baea"
+												},
+												{
+													"key": "identifier",
+													"value": "1",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 20 Nov 2021 21:46:58 GMT"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"meta\": {\n        \"code\": \"\",\n        \"message\": \"\",\n        \"request_id\": \"a42ad84f-35f8-4a60-89b0-040021bfa61c\"\n    },\n    \"pagination\": {\n        \"total_records\": 0,\n        \"total_page\": 0,\n        \"limit_page\": 0,\n        \"current_page\": 0\n    },\n    \"data\": {\n        \"user\": {\n            \"id\": 2,\n            \"id_user\": 1,\n            \"first_name\": \"John \",\n            \"last_name\": \"Doe\",\n            \"handphone\": \"081291755586\",\n            \"avatar\": \"https://plforchange.com/wp-content/uploads/2021/11/John.png\",\n            \"following\": 999,\n            \"followers\": 999,\n            \"community\": 999,\n            \"instagram\": \"link instagram\",\n            \"facebook\": \"link facebook\",\n            \"twitter\": \"link twitter\",\n            \"linkedin\": \"link linkedin\",\n            \"experiences\": null,\n            \"education\": null,\n            \"organization\": null,\n            \"ugc\": [\n                {\n                    \"id\": 2,\n                    \"id_ugc\": 2,\n                    \"id_user\": 1,\n                    \"id_interest\": 2,\n                    \"posting\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas arcu purus, commodo sit amet lectus sed, dapibus pellentesque neque. Nullam convallis gravida lectus, ullamcorper rhoncus turpis auctor quis. Nulla viverra lectus a odio malesuada sagittis. Ut auctor, leo in malesuada hendrerit, erat lorem finibus lectus, eu rutrum tellus magna nec justo.\",\n                    \"postingdate\": \"\",\n                    \"photopost\": \"\",\n                    \"videopost\": \"\"\n                },\n                {\n                    \"id\": 3,\n                    \"id_ugc\": 3,\n                    \"id_user\": 1,\n                    \"id_interest\": 3,\n                    \"posting\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas arcu purus, commodo sit amet lectus sed, dapibus pellentesque neque. Nullam convallis gravida lectus, ullamcorper rhoncus turpis auctor quis. Nulla viverra lectus a odio malesuada sagittis. Ut auctor, leo in malesuada hendrerit, erat lorem finibus lectus, eu rutrum tellus magna nec justo.\",\n                    \"postingdate\": \"\",\n                    \"photopost\": \"\",\n                    \"videopost\": \"\"\n                },\n                {\n                    \"id\": 4,\n                    \"id_ugc\": 4,\n                    \"id_user\": 1,\n                    \"id_interest\": 4,\n                    \"posting\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas arcu purus, commodo sit amet lectus sed, dapibus pellentesque neque. Nullam convallis gravida lectus, ullamcorper rhoncus turpis auctor quis. Nulla viverra lectus a odio malesuada sagittis. Ut auctor, leo in malesuada hendrerit, erat lorem finibus lectus, eu rutrum tellus magna nec justo.\",\n                    \"postingdate\": \"\",\n                    \"photopost\": \"\",\n                    \"videopost\": \"\"\n                },\n                {\n                    \"id\": 1,\n                    \"id_ugc\": 1,\n                    \"id_user\": 1,\n                    \"id_interest\": 1,\n                    \"posting\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas arcu purus, commodo sit amet lectus sed, dapibus pellentesque neque. Nullam convallis gravida lectus, ullamcorper rhoncus turpis auctor quis. Nulla viverra lectus a odio malesuada sagittis. Ut auctor, leo in malesuada hendrerit, erat lorem finibus lectus, eu rutrum tellus magna nec justo.\",\n                    \"postingdate\": \"\",\n                    \"photopost\": \"\",\n                    \"videopost\": \"\"\n                }\n            ],\n            \"interest_map\": [\n                {\n                    \"id\": 1,\n                    \"id_interest\": 1,\n                    \"id_user\": 1,\n                    \"interest\": [\n                        {\n                            \"id\": 1,\n                            \"id_interest\": 1,\n                            \"description\": \"Digital Advertising\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": 2,\n                    \"id_interest\": 2,\n                    \"id_user\": 1,\n                    \"interest\": [\n                        {\n                            \"id\": 2,\n                            \"id_interest\": 2,\n                            \"description\": \"3D Design\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": 3,\n                    \"id_interest\": 3,\n                    \"id_user\": 1,\n                    \"interest\": [\n                        {\n                            \"id\": 3,\n                            \"id_interest\": 3,\n                            \"description\": \"Frontend Development\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": 4,\n                    \"id_interest\": 4,\n                    \"id_user\": 1,\n                    \"interest\": [\n                        {\n                            \"id\": 4,\n                            \"id_interest\": 4,\n                            \"description\": \"UI/UX Design\"\n                        }\n                    ]\n                }\n            ]\n        }\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Scholarship",
+					"item": [
+						{
+							"name": "Get All Scholarship By Interest",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost:8080}}/api/GetAllScholarship",
+									"host": [
+										"{{localhost:8080}}"
+									],
+									"path": [
+										"api",
+										"GetAllScholarship"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Scholarship By Interest",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{localhost:8080}}/api/GetAllScholarship",
+											"host": [
+												"{{localhost:8080}}"
+											],
+											"path": [
+												"api",
+												"GetAllScholarship"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 21 Nov 2021 08:18:06 GMT"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"meta\": {\n        \"code\": \"\",\n        \"message\": \"\",\n        \"request_id\": \"94f18e8e-f7f6-4d1a-bdff-3514b99dba17\"\n    },\n    \"pagination\": {\n        \"total_records\": 0,\n        \"total_page\": 0,\n        \"limit_page\": 0,\n        \"current_page\": 0\n    },\n    \"data\": [\n        {\n            \"id\": 7,\n            \"id_scholarship\": 7,\n            \"Title\": \"Johnson Plains\",\n            \"provider\": \"Beatty and Sons\",\n            \"location\": \"United Kingdom\",\n            \"description\": \"Illo quia in omnis suscipit.\",\n            \"requirement\": \"similique\",\n            \"StartDate\": \"4/15/2021\",\n            \"EndDate\": \"6/2/2022\",\n            \"isdone\": false,\n            \"avatar\": \"https://cdn.fakercloud.com/avatars/goddardlewis_128.jpg\",\n            \"Target\": \"S1\",\n            \"Duration\": 4,\n            \"IDInterest\": 3\n        },\n        {\n            \"id\": 8,\n            \"id_scholarship\": 8,\n            \"Title\": \"Emelie Greens\",\n            \"provider\": \"Gaylord, Walsh and Prohaska\",\n            \"location\": \"Netherlands\",\n            \"description\": \"Voluptatem mollitia nemo aut voluptas possimus optio qui dolor.\",\n            \"requirement\": \"Laborum autem harum sed provident.\\nPorro ex adipisci officiis ex illo temporibus nesciunt ratione iste.\\nA totam nemo eum facilis atque dicta.\\nIpsam ex culpa officiis et soluta quia.\\nPlaceat ratione necessitatibus ut impedit est sequi.\",\n            \"StartDate\": \"9/18/2021\",\n            \"EndDate\": \"11/14/2022\",\n            \"isdone\": false,\n            \"avatar\": \"https://cdn.fakercloud.com/avatars/mizko_128.jpg\",\n            \"Target\": \"S1\",\n            \"Duration\": 4,\n            \"IDInterest\": 4\n        },\n        {\n            \"id\": 4,\n            \"id_scholarship\": 4,\n            \"Title\": \"Ledner Island\",\n            \"provider\": \"Labadie, O'Kon and Bruen\",\n            \"location\": \"Madagascar\",\n            \"description\": \"Qui eveniet autem suscipit et consequatur accusamus.\",\n            \"requirement\": \"Aut libero et non voluptatem quia ut autem eos.\\nVoluptatem tenetur quibusdam enim illo.\\nNeque quo ex ut maiores aut maiores ut molestiae.\\nEt non corrupti sint.\",\n            \"StartDate\": \"9/3/2021\",\n            \"EndDate\": \"1/1/2022\",\n            \"isdone\": false,\n            \"avatar\": \"https://cdn.fakercloud.com/avatars/okandungel_128.jpg\",\n            \"Target\": \"S1\",\n            \"Duration\": 4,\n            \"IDInterest\": 4\n        },\n        {\n            \"id\": 3,\n            \"id_scholarship\": 3,\n            \"Title\": \"Sufonama\",\n            \"provider\": \"Erasmus Mundus\",\n            \"location\": \"Germany\",\n            \"description\": \"Program Master di Hutan Berkelanjutan dan Manajemen Alam (SUFONAMA) adalah dua tahun kelas dunia program terpadu yang bertujuan membantu lulusan untuk menghadapi tantangan besar dalam pengelolaan sumberdaya alam secara berkelanjutan, yaitu tantangan pengelolaan hutan dan alam di suatu lanskap terpadu.\",\n            \"requirement\": \"1. The International Scholarship will apply to students beginning their Postgraduate course in September 2012 2. Students who receive other types of scholarships from Bangor University or other sources will not be entitled to the International Scholarship\",\n            \"StartDate\": \"12/29/2020\",\n            \"EndDate\": \"12/6/2021\",\n            \"isdone\": false,\n            \"avatar\": \"https://plforchange.com/wp-content/uploads/2021/11/Sufonam.png\",\n            \"Target\": \"S1\",\n            \"Duration\": 4,\n            \"IDInterest\": 3\n        },\n        {\n            \"id\": 5,\n            \"id_scholarship\": 5,\n            \"Title\": \"Sammie Ways\",\n            \"provider\": \"Parisian, Bernier and Crona\",\n            \"location\": \"Qatar\",\n            \"description\": \"Dolor et inventore vitae nemo delectus omnis quam perspiciatis.\",\n            \"requirement\": \"qui\",\n            \"StartDate\": \"9/18/2021\",\n            \"EndDate\": \"8/13/2022\",\n            \"isdone\": false,\n            \"avatar\": \"https://cdn.fakercloud.com/avatars/hota_v_128.jpg\",\n            \"Target\": \"S1\",\n            \"Duration\": 4,\n            \"IDInterest\": 1\n        },\n        {\n            \"id\": 6,\n            \"id_scholarship\": 6,\n            \"Title\": \"Batz Highway\",\n            \"provider\": \"Kuvalis - Hessel\",\n            \"location\": \"Denmark\",\n            \"description\": \"Tenetur magnam nobis eum ut illo quidem debitis error.\",\n            \"requirement\": \"Tempore est deserunt quisquam saepe veritatis ad est. Fugit velit enim et sint repellat voluptatem enim rerum quisquam. Fugit repudiandae ad veritatis ut officia. Id quo rerum dolor voluptatibus in cupiditate dolore voluptas dolore. Repudiandae hic maiores ut enim voluptas nam.\",\n            \"StartDate\": \"7/29/2021\",\n            \"EndDate\": \"3/4/2022\",\n            \"isdone\": false,\n            \"avatar\": \"https://cdn.fakercloud.com/avatars/angelcolberg_128.jpg\",\n            \"Target\": \"S1\",\n            \"Duration\": 4,\n            \"IDInterest\": 2\n        },\n        {\n            \"id\": 1,\n            \"id_scholarship\": 1,\n            \"Title\": \"KAIST\",\n            \"provider\": \"Korea Advanced Institute of Science & Technology (KAIST)\",\n            \"location\": \"South Korea\",\n            \"description\": \"Korea Advanced Institute of Science & Technology (KAIST) merupakan salah satu universitas ternama di Korea Selatan yang masuk ke dalam peringkat Top 40 terbaik di dunia versi QS World University Ranking. Kampus ini berfokus dalam bidang sains, teknik, dan teknologi. Namun dalam beberapa tahun terakhir, KAIST telah mendapatkan akreditasi internasional dalam program pendidikan bisnis.\",\n            \"requirement\": \"1. Merupakan pelamar internasional (termasuk dari Indonesia) dan tidak memiliki kewarganegaraan ganda dengan Korea Selatan. \",\n            \"StartDate\": \"1/20/2021\",\n            \"EndDate\": \"6/2/2022\",\n            \"isdone\": false,\n            \"avatar\": \"https://plforchange.com/wp-content/uploads/2021/11/Ritsumeikan.png\",\n            \"Target\": \"S2\",\n            \"Duration\": 2,\n            \"IDInterest\": 1\n        },\n        {\n            \"id\": 2,\n            \"id_scholarship\": 2,\n            \"Title\": \"Ritsumeikan\",\n            \"provider\": \"Japan Study Support (JSS)\",\n            \"location\": \"Japan\",\n            \"description\": \"Kesempatan beasiswa kuliah S1 di Jepang kali ini diberikan oleh Ritsumeikan Asia Pacific University (APU). Skema yang ditawarkan oleh beasiswa ini berupa potongan biaya kuliah untuk mahasiswa internasionalnya sebesar 30%, 50%, 65%, 80%, sampai 100%.\",\n            \"requirement\": \"Applicants who will obtain a Japanese status of residence (visa status) of student before enrolling at APU are eligible to apply for the APU Tuition reduction Scholarship at the time of application to APU. If you are not able to receive a status of residence of student by the time of enrollment to APU, the APU Tuition Reduction Scholarship will be revoked. The scholarship will also be revoked if you change to a status of residence other than student while studying at APU.\",\n            \"StartDate\": \"1/12/2021\",\n            \"EndDate\": \"8/13/2022\",\n            \"isdone\": false,\n            \"avatar\": \"https://plforchange.com/wp-content/uploads/2021/11/KAIST.png\",\n            \"Target\": \"S2\",\n            \"Duration\": 2,\n            \"IDInterest\": 2\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "GET Scholarship Detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost:8080}}/api/Scholarship/1",
+									"host": [
+										"{{localhost:8080}}"
+									],
+									"path": [
+										"api",
+										"Scholarship",
+										"1"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "GET Scholarship Detail",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{localhost:8080}}/api/Scholarship/1",
+											"host": [
+												"{{localhost:8080}}"
+											],
+											"path": [
+												"api",
+												"Scholarship",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 20 Nov 2021 15:49:28 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "933"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"meta\": {\n        \"code\": \"\",\n        \"message\": \"\",\n        \"request_id\": \"d2606c15-7d50-4d6d-8db9-d140662021d4\"\n    },\n    \"pagination\": {\n        \"total_records\": 0,\n        \"total_page\": 0,\n        \"limit_page\": 0,\n        \"current_page\": 0\n    },\n    \"data\": {\n        \"id\": 1,\n        \"id_scholarship\": 1,\n        \"judul\": \"\",\n        \"provider\": \"Korea Advanced Institute of Science & Technology (KAIST)\",\n        \"location\": \"South Korea\",\n        \"description\": \"Korea Advanced Institute of Science & Technology (KAIST) merupakan salah satu universitas ternama di Korea Selatan yang masuk ke dalam peringkat Top 40 terbaik di dunia versi QS World University Ranking. Kampus ini berfokus dalam bidang sains, teknik, dan teknologi. Namun dalam beberapa tahun terakhir, KAIST telah mendapatkan akreditasi internasional dalam program pendidikan bisnis.\",\n        \"requirement\": \"1. Merupakan pelamar internasional (termasuk dari Indonesia) dan tidak memiliki kewarganegaraan ganda dengan Korea Selatan. \",\n        \"startdate\": \"\",\n        \"enddate\": \"\",\n        \"isdone\": false,\n        \"avatar\": \"link photo beasiswa\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Internship",
+					"item": [
+						{
+							"name": "Get All Scholarship",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost:8080}}/api/GetAllInternship",
+									"host": [
+										"{{localhost:8080}}"
+									],
+									"path": [
+										"api",
+										"GetAllInternship"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Scholarship",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{localhost:8080}}/api/GetAllScholarship",
+											"host": [
+												"{{localhost:8080}}"
+											],
+											"path": [
+												"api",
+												"GetAllScholarship"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 20 Nov 2021 15:39:23 GMT"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"meta\": {\n        \"code\": \"\",\n        \"message\": \"\",\n        \"request_id\": \"6c3479bb-263d-4563-a8e1-e3522dfaf54a\"\n    },\n    \"pagination\": {\n        \"total_records\": 0,\n        \"total_page\": 0,\n        \"limit_page\": 0,\n        \"current_page\": 0\n    },\n    \"data\": [\n        {\n            \"id\": 3,\n            \"id_scholarship\": 3,\n            \"judul\": \"\",\n            \"provider\": \"Erasmus Mundus\",\n            \"location\": \"Germany\",\n            \"description\": \"Program Master di Hutan Berkelanjutan dan Manajemen Alam (SUFONAMA) adalah dua tahun kelas dunia program terpadu yang bertujuan membantu lulusan untuk menghadapi tantangan besar dalam pengelolaan sumberdaya alam secara berkelanjutan, yaitu tantangan pengelolaan hutan dan alam di suatu lanskap terpadu.\",\n            \"requirement\": \"1. The International Scholarship will apply to students beginning their Postgraduate course in September 2012 2. Students who receive other types of scholarships from Bangor University or other sources will not be entitled to the International Scholarship\",\n            \"startdate\": \"\",\n            \"enddate\": \"\",\n            \"isdone\": false,\n            \"avatar\": \"link photo beasiswa\"\n        },\n        {\n            \"id\": 2,\n            \"id_scholarship\": 2,\n            \"judul\": \"\",\n            \"provider\": \"Japan Study Support (JSS)\",\n            \"location\": \"Japan\",\n            \"description\": \"Kesempatan beasiswa kuliah S1 di Jepang kali ini diberikan oleh Ritsumeikan Asia Pacific University (APU). Skema yang ditawarkan oleh beasiswa ini berupa potongan biaya kuliah untuk mahasiswa internasionalnya sebesar 30%, 50%, 65%, 80%, sampai 100%.\",\n            \"requirement\": \"Applicants who will obtain a Japanese status of residence (visa status) of student before enrolling at APU are eligible to apply for the APU Tuition reduction Scholarship at the time of application to APU. If you are not able to receive a status of residence of student by the time of enrollment to APU, the APU Tuition Reduction Scholarship will be revoked. The scholarship will also be revoked if you change to a status of residence other than student while studying at APU.\",\n            \"startdate\": \"\",\n            \"enddate\": \"\",\n            \"isdone\": false,\n            \"avatar\": \"link photo beasiswa\"\n        },\n        {\n            \"id\": 1,\n            \"id_scholarship\": 1,\n            \"judul\": \"\",\n            \"provider\": \"Korea Advanced Institute of Science & Technology (KAIST)\",\n            \"location\": \"South Korea\",\n            \"description\": \"Korea Advanced Institute of Science & Technology (KAIST) merupakan salah satu universitas ternama di Korea Selatan yang masuk ke dalam peringkat Top 40 terbaik di dunia versi QS World University Ranking. Kampus ini berfokus dalam bidang sains, teknik, dan teknologi. Namun dalam beberapa tahun terakhir, KAIST telah mendapatkan akreditasi internasional dalam program pendidikan bisnis.\",\n            \"requirement\": \"1. Merupakan pelamar internasional (termasuk dari Indonesia) dan tidak memiliki kewarganegaraan ganda dengan Korea Selatan. \",\n            \"startdate\": \"\",\n            \"enddate\": \"\",\n            \"isdone\": false,\n            \"avatar\": \"link photo beasiswa\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "GET Scholarship Detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost:8080}}/api/Internship/2",
+									"host": [
+										"{{localhost:8080}}"
+									],
+									"path": [
+										"api",
+										"Internship",
+										"2"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "GET Scholarship Detail",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{localhost:8080}}/api/Internship/2",
+											"host": [
+												"{{localhost:8080}}"
+											],
+											"path": [
+												"api",
+												"Internship",
+												"2"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 20 Nov 2021 16:56:12 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "941"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"meta\": {\n        \"code\": \"\",\n        \"message\": \"\",\n        \"request_id\": \"6230aabf-a333-40b1-9210-1dcad1b92963\"\n    },\n    \"pagination\": {\n        \"total_records\": 0,\n        \"total_page\": 0,\n        \"limit_page\": 0,\n        \"current_page\": 0\n    },\n    \"data\": {\n        \"id\": 3,\n        \"id_intern\": 2,\n        \"judul\": \"Marketing Platform Support\",\n        \"provider\": \"Bank DBS\",\n        \"city\": \"Jakarta\",\n        \"country\": \"Indonesia\",\n        \"description\": \"Bank DBS Indonesia sebagai perusahaan yang sangat fokus pada journey atau pun pengalaman nasabah ketika menggunakan layanan kami baik di cabang maupun digital, kami selalu ingin dapat berkomunikasi secara baik dengan nasabah. Oleh karena itu perusahaan memiliki communication channel yang beragam, mulai dari notifikasi in-app (dalam aplikasi), tampilan in-app (dalam aplikasi), website, dan juga email. Semua cara tersebut bertujuan agar Bank bisa mengetahui secara pasti kebutuhan nasabah. \",\n        \"requirement\": \"Kemampuan menganalisa yang baik \",\n        \"startdate\": \"2021-07-24 05:26:55\",\n        \"enddate\": \"2022-01-24 05:26:55\",\n        \"isdone\": \"\",\n        \"avatar\": \"\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Ugc",
+					"item": [
+						{
+							"name": "Get All Ugc",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost:8080}}/api/getallugc?interest=1",
+									"host": [
+										"{{localhost:8080}}"
+									],
+									"path": [
+										"api",
+										"getallugc"
+									],
+									"query": [
+										{
+											"key": "interest",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Ugc",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{localhost:8080}}/api/getallugc",
+											"host": [
+												"{{localhost:8080}}"
+											],
+											"path": [
+												"api",
+												"getallugc"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 20 Nov 2021 22:04:41 GMT"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"meta\": {\n        \"code\": \"\",\n        \"message\": \"\",\n        \"request_id\": \"578064a8-081f-4b94-bf66-0af8bbf2a998\"\n    },\n    \"pagination\": {\n        \"total_records\": 0,\n        \"total_page\": 0,\n        \"limit_page\": 0,\n        \"current_page\": 0\n    },\n    \"data\": [\n        {\n            \"id\": 5,\n            \"id_ugc\": 5,\n            \"id_user\": 2,\n            \"id_interest\": 1,\n            \"posting\": \"Doloribus nisi veniam vitae repellat quia.\",\n            \"postingdate\": \"11/20/2021\",\n            \"photopost\": \"https://cdn.fakercloud.com/avatars/elliotnolten_128.jpg\",\n            \"videopost\": \"\",\n            \"profile\": [\n                {\n                    \"id_user\": 2,\n                    \"first_name\": \"Eldho\",\n                    \"last_name\": \"Stufend\",\n                    \"avatar\": \"https://plforchange.com/wp-content/uploads/2021/11/Eldho.png\"\n                }\n            ]\n        },\n        {\n            \"id\": 6,\n            \"id_ugc\": 6,\n            \"id_user\": 2,\n            \"id_interest\": 4,\n            \"posting\": \"Voluptatem nesciunt inventore esse pariatur commodi.\",\n            \"postingdate\": \"11/20/2021\",\n            \"photopost\": \"https://cdn.fakercloud.com/avatars/oskamaya_128.jpg\",\n            \"videopost\": \"\",\n            \"profile\": [\n                {\n                    \"id_user\": 2,\n                    \"first_name\": \"Eldho\",\n                    \"last_name\": \"Stufend\",\n                    \"avatar\": \"https://plforchange.com/wp-content/uploads/2021/11/Eldho.png\"\n                }\n            ]\n        },\n        {\n            \"id\": 7,\n            \"id_ugc\": 7,\n            \"id_user\": 2,\n            \"id_interest\": 1,\n            \"posting\": \"Minus voluptas voluptatibus odit rerum ut quod modi.\",\n            \"postingdate\": \"11/20/2021\",\n            \"photopost\": \"https://cdn.fakercloud.com/avatars/snowwrite_128.jpg\",\n            \"videopost\": \"\",\n            \"profile\": [\n                {\n                    \"id_user\": 2,\n                    \"first_name\": \"Eldho\",\n                    \"last_name\": \"Stufend\",\n                    \"avatar\": \"https://plforchange.com/wp-content/uploads/2021/11/Eldho.png\"\n                }\n            ]\n        },\n        {\n            \"id\": 8,\n            \"id_ugc\": 8,\n            \"id_user\": 2,\n            \"id_interest\": 4,\n            \"posting\": \"Pariatur quidem id velit aut tempora libero.\",\n            \"postingdate\": \"11/20/2021\",\n            \"photopost\": \"https://cdn.fakercloud.com/avatars/kaelifa_128.jpg\",\n            \"videopost\": \"\",\n            \"profile\": [\n                {\n                    \"id_user\": 2,\n                    \"first_name\": \"Eldho\",\n                    \"last_name\": \"Stufend\",\n                    \"avatar\": \"https://plforchange.com/wp-content/uploads/2021/11/Eldho.png\"\n                }\n            ]\n        },\n        {\n            \"id\": 9,\n            \"id_ugc\": 9,\n            \"id_user\": 2,\n            \"id_interest\": 4,\n            \"posting\": \"Quidem rerum et vero accusamus vero dolor ipsam modi.\",\n            \"postingdate\": \"11/20/2021\",\n            \"photopost\": \"https://cdn.fakercloud.com/avatars/charlesrpratt_128.jpg\",\n            \"videopost\": \"\",\n            \"profile\": [\n                {\n                    \"id_user\": 2,\n                    \"first_name\": \"Eldho\",\n                    \"last_name\": \"Stufend\",\n                    \"avatar\": \"https://plforchange.com/wp-content/uploads/2021/11/Eldho.png\"\n                }\n            ]\n        },\n        {\n            \"id\": 1,\n            \"id_ugc\": 1,\n            \"id_user\": 1,\n            \"id_interest\": 1,\n            \"posting\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas arcu purus, commodo sit amet lectus sed, dapibus pellentesque neque. Nullam convallis gravida lectus, ullamcorper rhoncus turpis auctor quis. Nulla viverra lectus a odio malesuada sagittis. Ut auctor, leo in malesuada hendrerit, erat lorem finibus lectus, eu rutrum tellus magna nec justo.\",\n            \"postingdate\": \"2021-11-20 \",\n            \"photopost\": \"link photo\",\n            \"videopost\": \"\",\n            \"profile\": [\n                {\n                    \"id_user\": 1,\n                    \"first_name\": \"John \",\n                    \"last_name\": \"Doe\",\n                    \"avatar\": \"https://plforchange.com/wp-content/uploads/2021/11/John.png\"\n                }\n            ]\n        },\n        {\n            \"id\": 2,\n            \"id_ugc\": 2,\n            \"id_user\": 1,\n            \"id_interest\": 2,\n            \"posting\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas arcu purus, commodo sit amet lectus sed, dapibus pellentesque neque. Nullam convallis gravida lectus, ullamcorper rhoncus turpis auctor quis. Nulla viverra lectus a odio malesuada sagittis. Ut auctor, leo in malesuada hendrerit, erat lorem finibus lectus, eu rutrum tellus magna nec justo.\",\n            \"postingdate\": \"2021-11-21 \",\n            \"photopost\": \"link photo\",\n            \"videopost\": \"\",\n            \"profile\": [\n                {\n                    \"id_user\": 1,\n                    \"first_name\": \"John \",\n                    \"last_name\": \"Doe\",\n                    \"avatar\": \"https://plforchange.com/wp-content/uploads/2021/11/John.png\"\n                }\n            ]\n        },\n        {\n            \"id\": 3,\n            \"id_ugc\": 3,\n            \"id_user\": 1,\n            \"id_interest\": 3,\n            \"posting\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas arcu purus, commodo sit amet lectus sed, dapibus pellentesque neque. Nullam convallis gravida lectus, ullamcorper rhoncus turpis auctor quis. Nulla viverra lectus a odio malesuada sagittis. Ut auctor, leo in malesuada hendrerit, erat lorem finibus lectus, eu rutrum tellus magna nec justo.\",\n            \"postingdate\": \"2021-11-21 \",\n            \"photopost\": \"\",\n            \"videopost\": \"\",\n            \"profile\": [\n                {\n                    \"id_user\": 1,\n                    \"first_name\": \"John \",\n                    \"last_name\": \"Doe\",\n                    \"avatar\": \"https://plforchange.com/wp-content/uploads/2021/11/John.png\"\n                }\n            ]\n        },\n        {\n            \"id\": 4,\n            \"id_ugc\": 4,\n            \"id_user\": 1,\n            \"id_interest\": 4,\n            \"posting\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas arcu purus, commodo sit amet lectus sed, dapibus pellentesque neque. Nullam convallis gravida lectus, ullamcorper rhoncus turpis auctor quis. Nulla viverra lectus a odio malesuada sagittis. Ut auctor, leo in malesuada hendrerit, erat lorem finibus lectus, eu rutrum tellus magna nec justo.\",\n            \"postingdate\": \"2021-11-21 \",\n            \"photopost\": \"\",\n            \"videopost\": \"\",\n            \"profile\": [\n                {\n                    \"id_user\": 1,\n                    \"first_name\": \"John \",\n                    \"last_name\": \"Doe\",\n                    \"avatar\": \"https://plforchange.com/wp-content/uploads/2021/11/John.png\"\n                }\n            ]\n        }\n    ]\n}"
+								},
+								{
+									"name": "Get All Ugc Using Filter",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{localhost:8080}}/api/getallugc?interest=1",
+											"host": [
+												"{{localhost:8080}}"
+											],
+											"path": [
+												"api",
+												"getallugc"
+											],
+											"query": [
+												{
+													"key": "interest",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 20 Nov 2021 22:24:52 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1513"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"meta\": {\n        \"code\": \"\",\n        \"message\": \"\",\n        \"request_id\": \"067a66b6-14d0-4399-aa7a-0d40ee7275f6\"\n    },\n    \"pagination\": {\n        \"total_records\": 0,\n        \"total_page\": 0,\n        \"limit_page\": 0,\n        \"current_page\": 0\n    },\n    \"data\": [\n        {\n            \"id\": 5,\n            \"id_ugc\": 5,\n            \"id_user\": 2,\n            \"id_interest\": 1,\n            \"posting\": \"Doloribus nisi veniam vitae repellat quia.\",\n            \"postingdate\": \"11/20/2021\",\n            \"photopost\": \"https://cdn.fakercloud.com/avatars/elliotnolten_128.jpg\",\n            \"videopost\": \"\",\n            \"profile\": [\n                {\n                    \"id_user\": 2,\n                    \"first_name\": \"Eldho\",\n                    \"last_name\": \"Stufend\",\n                    \"avatar\": \"https://plforchange.com/wp-content/uploads/2021/11/Eldho.png\"\n                }\n            ]\n        },\n        {\n            \"id\": 7,\n            \"id_ugc\": 7,\n            \"id_user\": 2,\n            \"id_interest\": 1,\n            \"posting\": \"Minus voluptas voluptatibus odit rerum ut quod modi.\",\n            \"postingdate\": \"11/20/2021\",\n            \"photopost\": \"https://cdn.fakercloud.com/avatars/snowwrite_128.jpg\",\n            \"videopost\": \"\",\n            \"profile\": [\n                {\n                    \"id_user\": 2,\n                    \"first_name\": \"Eldho\",\n                    \"last_name\": \"Stufend\",\n                    \"avatar\": \"https://plforchange.com/wp-content/uploads/2021/11/Eldho.png\"\n                }\n            ]\n        },\n        {\n            \"id\": 1,\n            \"id_ugc\": 1,\n            \"id_user\": 1,\n            \"id_interest\": 1,\n            \"posting\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas arcu purus, commodo sit amet lectus sed, dapibus pellentesque neque. Nullam convallis gravida lectus, ullamcorper rhoncus turpis auctor quis. Nulla viverra lectus a odio malesuada sagittis. Ut auctor, leo in malesuada hendrerit, erat lorem finibus lectus, eu rutrum tellus magna nec justo.\",\n            \"postingdate\": \"2021-11-20 \",\n            \"photopost\": \"link photo\",\n            \"videopost\": \"\",\n            \"profile\": [\n                {\n                    \"id_user\": 1,\n                    \"first_name\": \"John \",\n                    \"last_name\": \"Doe\",\n                    \"avatar\": \"https://plforchange.com/wp-content/uploads/2021/11/John.png\"\n                }\n            ]\n        }\n    ]\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Message",
+					"item": [
+						{
+							"name": "Get All Message",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost:8080}}/api/getallmessage",
+									"host": [
+										"{{localhost:8080}}"
+									],
+									"path": [
+										"api",
+										"getallmessage"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Scholarship",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{localhost:8080}}/api/getallmessage",
+											"host": [
+												"{{localhost:8080}}"
+											],
+											"path": [
+												"api",
+												"getallmessage"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sat, 20 Nov 2021 22:46:24 GMT"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1103"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"meta\": {\n        \"code\": \"\",\n        \"message\": \"\",\n        \"request_id\": \"1189f465-df53-4221-97f1-e3428f9b9508\"\n    },\n    \"pagination\": {\n        \"total_records\": 0,\n        \"total_page\": 0,\n        \"limit_page\": 0,\n        \"current_page\": 0\n    },\n    \"data\": [\n        {\n            \"id\": 1,\n            \"id_message\": 1,\n            \"id_user\": 1,\n            \"name\": \"Lisa Effertz\",\n            \"message\": \"Et vel possimus quae voluptatibus eum aut officia ipsum laborum.\",\n            \"avatar\": \"https://cdn.fakercloud.com/avatars/j2deme_128.jpg\"\n        },\n        {\n            \"id\": 2,\n            \"id_message\": 2,\n            \"id_user\": 1,\n            \"name\": \"Bradford Pfannerstill\",\n            \"message\": \"Et voluptas et iusto sint consectetur veniam nobis.\",\n            \"avatar\": \"https://cdn.fakercloud.com/avatars/ahmadajmi_128.jpg\"\n        },\n        {\n            \"id\": 3,\n            \"id_message\": 3,\n            \"id_user\": 1,\n            \"name\": \"Ken Schulist\",\n            \"message\": \"Officiis sint officia sit voluptas aut et ratione.\",\n            \"avatar\": \"https://cdn.fakercloud.com/avatars/garand_128.jpg\"\n        },\n        {\n            \"id\": 4,\n            \"id_message\": 4,\n            \"id_user\": 1,\n            \"name\": \"Brent Dooley\",\n            \"message\": \"Ducimus ipsum incidunt architecto.\",\n            \"avatar\": \"https://cdn.fakercloud.com/avatars/hgharrygo_128.jpg\"\n        },\n        {\n            \"id\": 5,\n            \"id_message\": 5,\n            \"id_user\": 1,\n            \"name\": \"Geraldine Runolfsson\",\n            \"message\": \"Atque doloremque voluptas asperiores molestiae.\",\n            \"avatar\": \"https://cdn.fakercloud.com/avatars/croakx_128.jpg\"\n        }\n    ]\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Bookmark",
+					"item": [
+						{
+							"name": "Get All Bookmark",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{localhost:8080}}/api/getallbookmark",
+									"host": [
+										"{{localhost:8080}}"
+									],
+									"path": [
+										"api",
+										"getallbookmark"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Bookmark",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{localhost:8080}}/api/getallbookmark",
+											"host": [
+												"{{localhost:8080}}"
+											],
+											"path": [
+												"api",
+												"getallbookmark"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 21 Nov 2021 06:15:41 GMT"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"meta\": {\n        \"code\": \"\",\n        \"message\": \"\",\n        \"request_id\": \"03ef0c68-7443-4cc6-afa0-0fe14bed56cc\"\n    },\n    \"pagination\": {\n        \"total_records\": 0,\n        \"total_page\": 0,\n        \"limit_page\": 0,\n        \"current_page\": 0\n    },\n    \"data\": [\n        {\n            \"id\": 1,\n            \"id_bookmark\": 1,\n            \"id_user\": 1,\n            \"id_intern\": 24,\n            \"id_scholarship\": 0,\n            \"name\": \"Japan\",\n            \"internship\": [\n                {\n                    \"id\": 24,\n                    \"id_intern\": 24,\n                    \"judul\": \"Product Interactions Liaison\",\n                    \"enddate\": \"4/10/2022\",\n                    \"avatar\": \"\",\n                    \"target\": \"Internship\",\n                    \"duration\": 6\n                }\n            ],\n            \"scholarship\": [\n                {\n                    \"id\": 0,\n                    \"id_scholarship\": 0,\n                    \"judul\": \"Tidak ada data\",\n                    \"enddate\": \"\",\n                    \"avatar\": \"\",\n                    \"target\": \"\",\n                    \"duration\": 0\n                }\n            ]\n        },\n        {\n            \"id\": 2,\n            \"id_bookmark\": 1,\n            \"id_user\": 1,\n            \"id_intern\": 0,\n            \"id_scholarship\": 34,\n            \"name\": \"Japan\",\n            \"internship\": [\n                {\n                    \"id\": 0,\n                    \"id_intern\": 0,\n                    \"judul\": \"tidak ada data\",\n                    \"enddate\": \"\",\n                    \"avatar\": \"\",\n                    \"target\": \"\",\n                    \"duration\": 0\n                }\n            ],\n            \"scholarship\": [\n                {\n                    \"id\": 34,\n                    \"id_scholarship\": 34,\n                    \"judul\": \"Jazlyn Roads\",\n                    \"enddate\": \"8/7/2022\",\n                    \"avatar\": \"https://cdn.fakercloud.com/avatars/enjoythetau_128.jpg\",\n                    \"target\": \"S1\",\n                    \"duration\": 4\n                }\n            ]\n        },\n        {\n            \"id\": 3,\n            \"id_bookmark\": 1,\n            \"id_user\": 1,\n            \"id_intern\": 0,\n            \"id_scholarship\": 35,\n            \"name\": \"Japan\",\n            \"internship\": [\n                {\n                    \"id\": 0,\n                    \"id_intern\": 0,\n                    \"judul\": \"tidak ada data\",\n                    \"enddate\": \"\",\n                    \"avatar\": \"\",\n                    \"target\": \"\",\n                    \"duration\": 0\n                }\n            ],\n            \"scholarship\": [\n                {\n                    \"id\": 35,\n                    \"id_scholarship\": 35,\n                    \"judul\": \"Carlos Summit\",\n                    \"enddate\": \"5/12/2022\",\n                    \"avatar\": \"https://cdn.fakercloud.com/avatars/jakemoore_128.jpg\",\n                    \"target\": \"S1\",\n                    \"duration\": 4\n                }\n            ]\n        },\n        {\n            \"id\": 4,\n            \"id_bookmark\": 1,\n            \"id_user\": 1,\n            \"id_intern\": 0,\n            \"id_scholarship\": 2,\n            \"name\": \"Japan\",\n            \"internship\": [\n                {\n                    \"id\": 0,\n                    \"id_intern\": 0,\n                    \"judul\": \"tidak ada data\",\n                    \"enddate\": \"\",\n                    \"avatar\": \"\",\n                    \"target\": \"\",\n                    \"duration\": 0\n                }\n            ],\n            \"scholarship\": [\n                {\n                    \"id\": 2,\n                    \"id_scholarship\": 2,\n                    \"judul\": \"Ritsumeikan\",\n                    \"enddate\": \"8/13/2022\",\n                    \"avatar\": \"https://plforchange.com/wp-content/uploads/2021/11/KAIST.png\",\n                    \"target\": \"S2\",\n                    \"duration\": 2\n                }\n            ]\n        },\n        {\n            \"id\": 6,\n            \"id_bookmark\": 2,\n            \"id_user\": 1,\n            \"id_intern\": 0,\n            \"id_scholarship\": 34,\n            \"name\": \"Australia\",\n            \"internship\": [\n                {\n                    \"id\": 0,\n                    \"id_intern\": 0,\n                    \"judul\": \"tidak ada data\",\n                    \"enddate\": \"\",\n                    \"avatar\": \"\",\n                    \"target\": \"\",\n                    \"duration\": 0\n                }\n            ],\n            \"scholarship\": [\n                {\n                    \"id\": 34,\n                    \"id_scholarship\": 34,\n                    \"judul\": \"Jazlyn Roads\",\n                    \"enddate\": \"8/7/2022\",\n                    \"avatar\": \"https://cdn.fakercloud.com/avatars/enjoythetau_128.jpg\",\n                    \"target\": \"S1\",\n                    \"duration\": 4\n                }\n            ]\n        },\n        {\n            \"id\": 7,\n            \"id_bookmark\": 2,\n            \"id_user\": 1,\n            \"id_intern\": 0,\n            \"id_scholarship\": 35,\n            \"name\": \"Australia\",\n            \"internship\": [\n                {\n                    \"id\": 0,\n                    \"id_intern\": 0,\n                    \"judul\": \"tidak ada data\",\n                    \"enddate\": \"\",\n                    \"avatar\": \"\",\n                    \"target\": \"\",\n                    \"duration\": 0\n                }\n            ],\n            \"scholarship\": [\n                {\n                    \"id\": 35,\n                    \"id_scholarship\": 35,\n                    \"judul\": \"Carlos Summit\",\n                    \"enddate\": \"5/12/2022\",\n                    \"avatar\": \"https://cdn.fakercloud.com/avatars/jakemoore_128.jpg\",\n                    \"target\": \"S1\",\n                    \"duration\": 4\n                }\n            ]\n        },\n        {\n            \"id\": 8,\n            \"id_bookmark\": 2,\n            \"id_user\": 1,\n            \"id_intern\": 0,\n            \"id_scholarship\": 2,\n            \"name\": \"Australia\",\n            \"internship\": [\n                {\n                    \"id\": 0,\n                    \"id_intern\": 0,\n                    \"judul\": \"tidak ada data\",\n                    \"enddate\": \"\",\n                    \"avatar\": \"\",\n                    \"target\": \"\",\n                    \"duration\": 0\n                }\n            ],\n            \"scholarship\": [\n                {\n                    \"id\": 2,\n                    \"id_scholarship\": 2,\n                    \"judul\": \"Ritsumeikan\",\n                    \"enddate\": \"8/13/2022\",\n                    \"avatar\": \"https://plforchange.com/wp-content/uploads/2021/11/KAIST.png\",\n                    \"target\": \"S2\",\n                    \"duration\": 2\n                }\n            ]\n        },\n        {\n            \"id\": 5,\n            \"id_bookmark\": 2,\n            \"id_user\": 1,\n            \"id_intern\": 74,\n            \"id_scholarship\": 0,\n            \"name\": \"Australia\",\n            \"internship\": [\n                {\n                    \"id\": 74,\n                    \"id_intern\": 74,\n                    \"judul\": \"Global Solutions Assistant\",\n                    \"enddate\": \"11/20/2022\",\n                    \"avatar\": \"\",\n                    \"target\": \"Internship\",\n                    \"duration\": 6\n                }\n            ],\n            \"scholarship\": [\n                {\n                    \"id\": 0,\n                    \"id_scholarship\": 0,\n                    \"judul\": \"Tidak ada data\",\n                    \"enddate\": \"\",\n                    \"avatar\": \"\",\n                    \"target\": \"\",\n                    \"duration\": 0\n                }\n            ]\n        },\n        {\n            \"id\": 9,\n            \"id_bookmark\": 3,\n            \"id_user\": 1,\n            \"id_intern\": 26,\n            \"id_scholarship\": 0,\n            \"name\": \"Germany\",\n            \"internship\": [\n                {\n                    \"id\": 26,\n                    \"id_intern\": 26,\n                    \"judul\": \"International Research Associate\",\n                    \"enddate\": \"5/5/2022\",\n                    \"avatar\": \"\",\n                    \"target\": \"Internship\",\n                    \"duration\": 6\n                }\n            ],\n            \"scholarship\": [\n                {\n                    \"id\": 0,\n                    \"id_scholarship\": 0,\n                    \"judul\": \"Tidak ada data\",\n                    \"enddate\": \"\",\n                    \"avatar\": \"\",\n                    \"target\": \"\",\n                    \"duration\": 0\n                }\n            ]\n        },\n        {\n            \"id\": 10,\n            \"id_bookmark\": 3,\n            \"id_user\": 1,\n            \"id_intern\": 27,\n            \"id_scholarship\": 0,\n            \"name\": \"Germany\",\n            \"internship\": [\n                {\n                    \"id\": 27,\n                    \"id_intern\": 27,\n                    \"judul\": \"District Infrastructure Designer\",\n                    \"enddate\": \"11/12/2022\",\n                    \"avatar\": \"\",\n                    \"target\": \"Internship\",\n                    \"duration\": 6\n                }\n            ],\n            \"scholarship\": [\n                {\n                    \"id\": 0,\n                    \"id_scholarship\": 0,\n                    \"judul\": \"Tidak ada data\",\n                    \"enddate\": \"\",\n                    \"avatar\": \"\",\n                    \"target\": \"\",\n                    \"duration\": 0\n                }\n            ]\n        },\n        {\n            \"id\": 11,\n            \"id_bookmark\": 3,\n            \"id_user\": 1,\n            \"id_intern\": 0,\n            \"id_scholarship\": 50,\n            \"name\": \"Germany\",\n            \"internship\": [\n                {\n                    \"id\": 0,\n                    \"id_intern\": 0,\n                    \"judul\": \"tidak ada data\",\n                    \"enddate\": \"\",\n                    \"avatar\": \"\",\n                    \"target\": \"\",\n                    \"duration\": 0\n                }\n            ],\n            \"scholarship\": [\n                {\n                    \"id\": 50,\n                    \"id_scholarship\": 50,\n                    \"judul\": \"Amparo Viaduct\",\n                    \"enddate\": \"7/17/2022\",\n                    \"avatar\": \"https://cdn.fakercloud.com/avatars/aiiaiiaii_128.jpg\",\n                    \"target\": \"S2\",\n                    \"duration\": 2\n                }\n            ]\n        },\n        {\n            \"id\": 12,\n            \"id_bookmark\": 3,\n            \"id_user\": 1,\n            \"id_intern\": 0,\n            \"id_scholarship\": 51,\n            \"name\": \"Germany\",\n            \"internship\": [\n                {\n                    \"id\": 0,\n                    \"id_intern\": 0,\n                    \"judul\": \"tidak ada data\",\n                    \"enddate\": \"\",\n                    \"avatar\": \"\",\n                    \"target\": \"\",\n                    \"duration\": 0\n                }\n            ],\n            \"scholarship\": [\n                {\n                    \"id\": 51,\n                    \"id_scholarship\": 51,\n                    \"judul\": \"Ellsworth Shore\",\n                    \"enddate\": \"5/13/2022\",\n                    \"avatar\": \"https://cdn.fakercloud.com/avatars/beshur_128.jpg\",\n                    \"target\": \"S2\",\n                    \"duration\": 2\n                }\n            ]\n        },\n        {\n            \"id\": 13,\n            \"id_bookmark\": 4,\n            \"id_user\": 1,\n            \"id_intern\": 35,\n            \"id_scholarship\": 0,\n            \"name\": \"South Korea\",\n            \"internship\": [\n                {\n                    \"id\": 35,\n                    \"id_intern\": 35,\n                    \"judul\": \"Lead Mobility Orchestrator\",\n                    \"enddate\": \"6/9/2022\",\n                    \"avatar\": \"\",\n                    \"target\": \"Internship\",\n                    \"duration\": 6\n                }\n            ],\n            \"scholarship\": [\n                {\n                    \"id\": 0,\n                    \"id_scholarship\": 0,\n                    \"judul\": \"Tidak ada data\",\n                    \"enddate\": \"\",\n                    \"avatar\": \"\",\n                    \"target\": \"\",\n                    \"duration\": 0\n                }\n            ]\n        },\n        {\n            \"id\": 14,\n            \"id_bookmark\": 4,\n            \"id_user\": 1,\n            \"id_intern\": 36,\n            \"id_scholarship\": 0,\n            \"name\": \"South Korea\",\n            \"internship\": [\n                {\n                    \"id\": 36,\n                    \"id_intern\": 36,\n                    \"judul\": \"International Metrics Director\",\n                    \"enddate\": \"12/29/2021\",\n                    \"avatar\": \"\",\n                    \"target\": \"Internship\",\n                    \"duration\": 6\n                }\n            ],\n            \"scholarship\": [\n                {\n                    \"id\": 0,\n                    \"id_scholarship\": 0,\n                    \"judul\": \"Tidak ada data\",\n                    \"enddate\": \"\",\n                    \"avatar\": \"\",\n                    \"target\": \"\",\n                    \"duration\": 0\n                }\n            ]\n        },\n        {\n            \"id\": 15,\n            \"id_bookmark\": 4,\n            \"id_user\": 1,\n            \"id_intern\": 0,\n            \"id_scholarship\": 21,\n            \"name\": \"South Korea\",\n            \"internship\": [\n                {\n                    \"id\": 0,\n                    \"id_intern\": 0,\n                    \"judul\": \"tidak ada data\",\n                    \"enddate\": \"\",\n                    \"avatar\": \"\",\n                    \"target\": \"\",\n                    \"duration\": 0\n                }\n            ],\n            \"scholarship\": [\n                {\n                    \"id\": 21,\n                    \"id_scholarship\": 21,\n                    \"judul\": \"Corwin Route\",\n                    \"enddate\": \"8/26/2022\",\n                    \"avatar\": \"https://cdn.fakercloud.com/avatars/andresenfredrik_128.jpg\",\n                    \"target\": \"S1\",\n                    \"duration\": 4\n                }\n            ]\n        },\n        {\n            \"id\": 16,\n            \"id_bookmark\": 4,\n            \"id_user\": 1,\n            \"id_intern\": 0,\n            \"id_scholarship\": 28,\n            \"name\": \"South Korea\",\n            \"internship\": [\n                {\n                    \"id\": 0,\n                    \"id_intern\": 0,\n                    \"judul\": \"tidak ada data\",\n                    \"enddate\": \"\",\n                    \"avatar\": \"\",\n                    \"target\": \"\",\n                    \"duration\": 0\n                }\n            ],\n            \"scholarship\": [\n                {\n                    \"id\": 28,\n                    \"id_scholarship\": 28,\n                    \"judul\": \"Kiara Lakes\",\n                    \"enddate\": \"8/17/2022\",\n                    \"avatar\": \"https://cdn.fakercloud.com/avatars/turkutuuli_128.jpg\",\n                    \"target\": \"S1\",\n                    \"duration\": 4\n                }\n            ]\n        }\n    ]\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "localhost:8080",
+			"value": "http://localhost:8080"
+		}
+	]
+}
